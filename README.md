@@ -16,29 +16,29 @@ Before you dive into this repository, ensure you have the following prerequisite
 
 - **Lupyne**: Lupyne is a Python extension for accessing Java Lucene. Install it using:
 
-  ```bash
-  pip install lupyne
-    ```
+```bash
+pip install lupyne
+```
 
 - **PyLucene (Optional)**: If you prefer to work with PyLucene directly, follow the installation instructions on the official page.
 
 - **Docker (Optional)**: If you'd like to work with Docker, you can build a Docker image with Lucene by running:
 
-  ```bash
+```bash
 docker pull coady/pylucene .
 docker run -it --rm -v $PWD:/usr/src coady/pylucene /bin/bash
-    ```
+```
 
 ## Installation
 Follow these steps to set up your environment and begin processing Freebase data:
 
 Clone this repository to your local machine:
 
-    ```bash
+```bash
 git clone https://github.com/your-username/Freebase-processing.git
 cd Freebase-processing
 Download the Freebase data dump as mentioned in the Prerequisites.
-    ```
+```
 
 Configure your environment with the necessary packages as described in Prerequisites.
 
@@ -47,14 +47,14 @@ With your environment set up, you can now process Freebase data and perform enti
 
 Build the Lucene index using the provided script:
 
-    ```bash
+```bash
 python build_lucene_index.py
-    ```
+```
 
 Search for entities in the constructed index. You can specify the entities you want to search for, separated by semicolons:
 
-    ```bash
+```bash
 python search_index.py --entities="Mona Lisa;Paris;Louvre"
-    ```
+```
 
 This repository empowers you to efficiently explore the vast knowledge contained within Freebase, providing a foundation for various knowledge retrieval and data enrichment projects.
